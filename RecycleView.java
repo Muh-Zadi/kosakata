@@ -51,11 +51,7 @@ public class RecycleView extends AppCompatActivity {
         txtmerk = (TextView)findViewById(R.id.txtmerk);
         txttipe = (TextView)findViewById(R.id.txttipe);
         txtketerangan = (TextView)findViewById(R.id.txtketerangan);*/
-        final ImageSwitcher imageSwitcher = (ImageSwitcher)findViewById(R.id.switcher);
-       // imageSwitcher.setFactory(this);
-        imageSwitcher.setInAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_in));
-        imageSwitcher.setOutAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
-      // imageSwitcher.setImageResource(list_data.get);
+        
         requestQueue = Volley.newRequestQueue(RecycleView.this);
         list_data = new ArrayList<HashMap<String, String>>();
 
