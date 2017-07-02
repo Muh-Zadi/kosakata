@@ -46,14 +46,7 @@ public class AdapterList extends RecyclerView.Adapter<AdapterList.ViewHolder> {
                 .placeholder(R.drawable.no_available)
                 .into(holder.imghape);
        // holder.txthape.setText(list_data.get(position).get("merk"));
-        holder.imghape.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(context, "satu" +list_data.get(position), Toast.LENGTH_SHORT).show();
-               // imageSwitcher.setImageResource(list_data.get(position));
-
-            }
-        });
+        
     }
 
     @Override
@@ -63,14 +56,12 @@ public class AdapterList extends RecyclerView.Adapter<AdapterList.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder {
        // TextView txthape;
         ImageView imghape;
-        ImageSwitcher imageSwitcher;
 
         public ViewHolder(View itemView) {
             super(itemView);
 
          // txthape = (TextView) itemView.findViewById(R.id.txthape);
             imghape = (ImageView) itemView.findViewById(R.id.imghp);
-            imageSwitcher =( ImageSwitcher) itemView.findViewById(R.id.switcher);
 
         }
     }
